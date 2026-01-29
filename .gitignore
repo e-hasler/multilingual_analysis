@@ -1,0 +1,62 @@
+models_curation/bloom/venv_bloom
+models_curation/bloom/bin
+models_curation/bloom/include
+models_curation/bloom/lib
+models_curation/bloom/share
+models_curation/bloom/pyvenv.cfg
+models_curation/papers
+
+
+# From lm-evaluation-harness
+lm-evaluation-harness/venv_eval/
+
+# macOS system files
+lm-evaluation-harness/.DS_Store
+
+# Virtual environments
+lm-evaluation-harness/.venv/
+lm-evaluation-harness/venv/
+lm-evaluation-harness/ENV/
+lm-evaluation-harness/env/
+lm-evaluation-harness/*.env
+
+# Python bytecode and build artifacts
+lm-evaluation-harness/__pycache__/
+lm-evaluation-harness/*.py[cod]
+lm-evaluation-harness/*.so
+lm-evaluation-harness/*.egg-info/
+lm-evaluation-harness/build/
+lm-evaluation-harness/dist/
+
+# IDE & editor settings
+lm-evaluation-harness/.vscode/
+lm-evaluation-harness/.idea/
+
+# Jupyter
+lm-evaluation-harness/.ipynb_checkpoints/
+lm-evaluation-harness/profile_default/
+lm-evaluation-harness/ipython_config.py
+
+# Output and data
+lm-evaluation-harness/output/
+lm-evaluation-harness/data/
+lm-evaluation-harness/temp/
+lm-evaluation-harness/test_logs/
+
+# Caching
+lm-evaluation-harness/lm_eval/caching/.cache
+lm-evaluation-harness/lm_cache/
+
+# Logging
+lm-evaluation-harness/*.log
+lm-evaluation-harness/logs/
+
+# wandb experiment tracking
+lm-evaluation-harness/wandb/
+lm-evaluation-harness/examples/wandb/
+
+# PyInstaller
+lm-evaluation-harness/*.spec
+
+#uv
+lm-evaluation-harness/uv.lock
