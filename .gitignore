@@ -60,3 +60,5 @@ lm-evaluation-harness/*.spec
 
 #uv
 lm-evaluation-harness/uv.lock
+
+benchmarks_curation/tydiqa-v1.0-dev.jsonl
