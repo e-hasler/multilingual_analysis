@@ -8,7 +8,7 @@ models_curation/papers
 
 
 # From lm-evaluation-harness
-lm-evaluation-harness/venv_eval/
+lm-evaluation-harness/venv_eval
 
 # macOS system files
 lm-evaluation-harness/.DS_Store
@@ -62,3 +62,4 @@ lm-evaluation-harness/*.spec
 lm-evaluation-harness/uv.lock
 
 benchmarks_curation/tydiqa-v1.0-dev.jsonl
+benchmarks_curation/*.jsonl
