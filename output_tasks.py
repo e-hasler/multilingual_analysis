@@ -1,7 +1,7 @@
 import subprocess
 
 # 1. Run lm-eval and save output
-with open("tasks.txt", "w") as f:
+with open("tasks_description.txt", "w") as f:
     subprocess.run(
         ["lm-eval", "ls", "tasks"],
         cwd="lm-evaluation-harness",
@@ -11,12 +11,12 @@ with open("tasks.txt", "w") as f:
         check=True
     )
 
-print("Saved lm-eval task list to tasks.txt")
+print("Saved lm-eval task list to tasks_description.txt")
 
 # 2. Parse task names
 all_tasks = []
 
-with open("tasks.txt", "r") as f:
+with open("tasks_description.txt", "r") as f:
     for line in f:
         line = line.strip()
 
@@ -30,6 +30,10 @@ with open("tasks.txt", "r") as f:
         cols = [c.strip() for c in line.split("|") if c.strip()]
         if cols:
             all_tasks.append(cols[0])
+
+with open("tasks.txt", "w") as f:
+    for task in all_tasks:
+        f.write(task + ", \n")
 
 # 3. Print the list
 print(all_tasks)
