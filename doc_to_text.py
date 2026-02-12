@@ -30,7 +30,7 @@ metric_list:
 
 local_output_dir = "/Users/eleonore.hasler/Documents/multilingual_analysis/custom_tasks"
 
-for lang in languages[:1]: # for testing purpose
+for lang in languages:
     lang_lower = lang.lower()
     with open(f"{local_output_dir}/include_base_44_{lang_lower}.yaml", "w") as f:
         f.write(template.format(lang_lower=lang_lower, lang_proper=lang))
