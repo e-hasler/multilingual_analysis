@@ -1,0 +1,12 @@
+task: include_base_44_azerbaijani
+dataset_path: CohereLabs/include-base-44
+dataset_name: Azerbaijani
+test_split: test
+output_type: multiple_choice
+doc_to_text: "{{question}}"
+doc_to_target: label
+doc_to_choice: "{{choices}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
